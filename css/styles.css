@@ -77,20 +77,20 @@ address {
 /*#region section1*/
 
 
-.section1 {
+.hero {
     background-color: #2e2f42;
 }
 
-.section1-title {
+.hero-title {
         font-weight: 700;
         font-size: 56px; 
-        line-height: 1.07143;
+        line-height: 1.07;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
 }
 
-.section1-btn {
+.hero-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -100,8 +100,8 @@ address {
     cursor: pointer;
 }
 
-.section1-btn:hover,
-.section1-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
 background-color: #404bbf;
 }
 /*#endregion section1*/
