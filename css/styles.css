@@ -107,7 +107,7 @@ background-color: #404bbf;
 /*#endregion section1*/
 
 /*#region section2*/
-.section-2-title {
+.section-two-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -115,7 +115,7 @@ background-color: #404bbf;
         color: #2e2f42;
 }
 
-.section-2-text {
+.section-two-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
@@ -125,15 +125,22 @@ background-color: #404bbf;
 
 /*#region section3*/
 
-.section3 {
+.section-team {
     background-color:#f4f4fd;
 }
 
-.section3-title {}
+.section-team-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+}
 
-.section3-item {}
+.section-team-item {}
 
-.section3-workers {}
+.section-team-workers {}
 
 .workers-title {
     font-weight: 500;
