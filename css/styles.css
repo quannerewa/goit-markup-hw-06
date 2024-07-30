@@ -132,13 +132,16 @@ background-color: #404bbf;
 .section-team-title {
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.11111;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        text-transform: capitalize
 }
 
-.section-team-item {}
+.section-team-item {
+    background-color: #ffffff;
+}
 
 .section-team-workers {}
 
