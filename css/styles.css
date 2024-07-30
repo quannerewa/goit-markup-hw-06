@@ -107,7 +107,7 @@ background-color: #404bbf;
 /*#endregion section1*/
 
 /*#region section2*/
-.section2-title {
+.section-2-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -115,7 +115,7 @@ background-color: #404bbf;
         color: #2e2f42;
 }
 
-.section2-text {
+.section-2-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
