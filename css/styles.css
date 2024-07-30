@@ -143,7 +143,9 @@ background-color: #404bbf;
     background-color: #ffffff;
 }
 
-.section-team-workers {}
+.section-team-workers {
+    background-color: #FFFFFF;
+}
 
 .workers-title {
     font-weight: 500;
@@ -166,23 +168,24 @@ background-color: #404bbf;
 
 /*#region section4*/
 
-.section4 {}
+.section-portfolio {}
 
-.section4-title {
+.section-portfolio-title {
 
     font-weight: 700;
     font-size: 36px; 
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
 }
 
-.section4-item {}
+.section-portfolio-item {}
 
-.section4-item-list {}
+.section-portfolio-item-list {}
 
-.section4-list-title {
+.section-portfolio-list-title {
         font-weight: 500;
         font-size: 20px; 
         line-height: 1.2;
@@ -190,7 +193,7 @@ background-color: #404bbf;
         color: #2e2f42;
 }
 
-.section4-list-explanation {
+.section-portfolio-list-explanation {
         font-weight: 400;
         font-size: 16px; 
         line-height: 1.5;
