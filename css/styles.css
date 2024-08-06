@@ -243,6 +243,7 @@ background-color: #404bbf;
         line-height: 1.11;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
+        margin-bottom: 72px;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize
@@ -285,10 +286,46 @@ flex-direction: row;
 }
 
 .mark {
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 8px;
     padding: 32px 0;
 }
+
+.mark-guerrero {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.tom {
+margin-bottom: 8px;
+    padding: 32px 0;
+}
+
+.tom-ford {
+width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.camila{
+margin-bottom: 8px;
+    padding: 32px 0;
+}
+
+.camila-garcia {
+width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.daniel {
+margin-bottom: 8px;
+    padding: 32px 0;
+}
+
+.daniel-wilson {
+width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
 /*#endregion section3*/
 
 
