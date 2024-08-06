@@ -322,7 +322,7 @@ flex-direction: row;
     margin-bottom: 72px;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 8px;
+    
 }
 
 .section-portfolio-item {
@@ -343,6 +343,7 @@ flex-direction: row;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
         border-bottom: 1px solid #e7e9fc;
             border-left: 1px solid #e7e9fc;
             border-right: 1px solid #e7e9fc;
@@ -365,6 +366,11 @@ flex-direction: row;
     border-top: none;
 
 }
+
+.appointment-app-list{
+width: calc((100% - 48px) / 3);
+}
+
 
 /*#endregion section4*/
 
