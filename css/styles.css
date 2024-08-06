@@ -234,6 +234,7 @@ background-color: #404bbf;
 
 .section-team {
     background-color:#f4f4fd;
+    padding: 120px 0;
 }
 
 .section-team-title {
@@ -241,9 +242,12 @@ background-color: #404bbf;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize
+       
+        
            
 }
 
@@ -253,14 +257,9 @@ display: flex;
 flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 32px;
-    align-items: center;
-        justify-content: center;
-        gap: 32px;
-        border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
-        
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    gap: 24px;
        
 }
 
@@ -285,6 +284,11 @@ flex-direction: row;
         text-align: center;
 }
 
+.mark {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    padding: 32px 0;
+}
 /*#endregion section3*/
 
 
