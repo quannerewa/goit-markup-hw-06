@@ -30,7 +30,6 @@ button{
 } 
 
 .container {
-    display: flex;
     max-width: 1158;
     padding-left: 15px;
     padding-right: 15px;
@@ -42,13 +41,32 @@ button{
     padding-bottom: 120px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*#region Header*/
-.header { 
-  
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
+    display: flex;
 }
 
 .logo {
@@ -60,7 +78,8 @@ button{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-
+   
+ 
 }
 
 .clr-logo {
@@ -69,7 +88,7 @@ button{
 
 .menu {
     display: flex;
-
+gap: 40px;
 }
 
 .menu-item {}
@@ -80,6 +99,9 @@ button{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        display: block;
+        padding-top: 24px;
+            padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -92,13 +114,20 @@ address {
    
 }
 
-
+.adrs-item {
+    display: flex;
+    gap: 40px;
+    
+}
 .adrs-link{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    display: block;
+    padding-top: 24px;
+        padding-bottom: 24px
 }
 
 .adrs-link:hover,
@@ -111,17 +140,28 @@ address {
 
 
 .hero {
+    
+}
+
+.hero-container {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 292px;
+    padding-left: 331px;
+    padding-right: 331px;
+    
 }
 
 .hero-title {
-        font-weight: 700;
-        font-size: 56px; 
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
+font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+            margin-bottom: 48px;
 }
+
 
 .hero-btn {
     font-weight: 500;
@@ -131,6 +171,15 @@ address {
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    align-items: center;
+    height: 56px;
+        padding: 16px 32px 16px 32px;
+        display: flex;
+        border-radius: 4px;
+        min-width: 169px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box
 }
 
 .hero-btn:hover,
@@ -141,9 +190,20 @@ background-color: #404bbf;
 
 /*#region section2*/
 
+.section-two {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .section-two-item {
     display: flex;
+    gap: 24px;
+    justify-content: center;
 
+}
+
+.section-two-posabilities {
+    width: calc((100% - 72px)/4);
 }
 
 .section-two-title {
@@ -152,6 +212,7 @@ background-color: #404bbf;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .section-two-text {
@@ -176,15 +237,29 @@ background-color: #404bbf;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize
+           
 }
 
 .section-team-item {
-    background-color: #ffffff;
-   
+    background-color: #f4f4fd;;
+display: flex;
+flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+        justify-content: center;
+        gap: 32px;
+        border-radius: 0 0 4px 4px;
+        padding: 0px 0px 32px 0px;
+        
+       
 }
 
 .section-team-workers {
-    background-color: #FFFFFF;
+    background-color: #f4f4fd;;
+    
 }
 
 .workers-title {
@@ -208,7 +283,11 @@ background-color: #404bbf;
 
 /*#region section4*/
 
-.section-portfolio {}
+.section-portfolio {
+    margin-top: 120px;
+    margin-left: 156px;
+    margin-left: 156px;
+}
 
 .section-portfolio-title {
 
