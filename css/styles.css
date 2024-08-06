@@ -57,6 +57,7 @@ button{
 /*#region Header*/
 .header {
     border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
 }
 
 .header-container {
@@ -67,6 +68,7 @@ button{
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -78,7 +80,7 @@ button{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-   
+margin-right: 76px;
  
 }
 
@@ -140,6 +142,7 @@ address {
 
 
 .hero {
+    padding: 188px 0;
     
 }
 
@@ -160,6 +163,7 @@ font-weight: 700;
     text-align: center;
     color: #fff;
             margin-bottom: 48px;
+            max-width: 496px;
 }
 
 
@@ -171,15 +175,17 @@ font-weight: 700;
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    display: block;
     align-items: center;
     height: 56px;
-        padding: 16px 32px 16px 32px;
-        display: flex;
-        border-radius: 4px;
-        min-width: 169px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: none;
+        
 }
 
 .hero-btn:hover,
@@ -193,6 +199,7 @@ background-color: #404bbf;
 .section-two {
     margin-top: 120px;
     margin-bottom: 120px;
+    padding: 120px 0
 }
 
 .section-two-item {
@@ -339,6 +346,7 @@ flex-direction: row;
 /*#region footer*/
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo {
@@ -347,6 +355,8 @@ flex-direction: row;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .clr-logo-footer {
