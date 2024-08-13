@@ -136,7 +136,8 @@ color: #404bbf;
 
 .menu-link:hover,
 .menu-link:focus {
-    transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address {
@@ -163,7 +164,8 @@ address {
 
 .adrs-link:hover,
 .adrs-link:focus {
-    transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1)
+   color:#404bbf;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 /*#endregion Header*/
 
@@ -558,7 +560,7 @@ font-weight: 500;
 
 .footer-social-media-list:hover ,
 .footer-social-media-list:focus {
-   background-color: #31d0aa;
+ 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -578,9 +580,8 @@ margin-top: 8px;
 
 .footer-link-icon:hover ,
 .footer-link-icon:focus {
-
-    transition: #31d0aa 250ms
-   cubic-bezier(0.4, 0, 0.2, 1) ;
+background-color: #31d0aa;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .social-media-icon {
