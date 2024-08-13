@@ -134,8 +134,7 @@ color: #404bbf;
 
 .menu-link:hover,
 .menu-link:focus {
-    color: #404bbf;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address {
@@ -161,8 +160,7 @@ address {
 
 .adrs-link:hover,
 .adrs-link:focus {
-    color: #404bbf;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 /*#endregion Header*/
 
@@ -450,7 +448,7 @@ transition-duration: 250ms;
         height: 100%;
         transition: transform 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 40px 32px 164px 32px;
+        padding: 40px 32px;
         transform: translateY(100%)
         
         
@@ -470,7 +468,6 @@ transition-duration: 250ms;
         font-size: 16px; 
         line-height: 1.5;
         letter-spacing: 0.02em;
-    padding: 40px 32px;
 }
 
 .appointment-app {
@@ -540,6 +537,7 @@ font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .footer-social-media-item {
@@ -552,6 +550,11 @@ font-weight: 500;
     width: 40px;
     height: 40px;
        
+}
+
+.footer-social-media-list:hover ,
+.footer-social-media-list:focus {
+    
 }
 
 .footer-link-icon {
@@ -568,7 +571,8 @@ margin-top: 8px;
 
 .footer-link-icon:hover ,
 .footer-link-icon:focus {
-   transition: background-color:#31d0aa 250ms
+background-color: #31d0aa;
+    transition: 250ms
    cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
