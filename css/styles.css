@@ -130,6 +130,7 @@ color: #404bbf;
         height: 4px;
         background-color: #404bbf;
         border-radius: 2px;
+        transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -554,7 +555,8 @@ font-weight: 500;
 
 .footer-social-media-list:hover ,
 .footer-social-media-list:focus {
-    
+   background-color: #31d0aa;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-icon {
