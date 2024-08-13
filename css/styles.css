@@ -359,7 +359,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .social-media-item {
 display: flex;
     justify-content: center;
-    gap: 16px;
+gap: 24px;
 }
 
 .social-media-list {
@@ -381,7 +381,7 @@ height: 40px;
 
 .section-link-icon:hover ,
 .section-link-icon:focus {
-    background-color: #31d0aa;
+    background-color: #404bbf;
     transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
