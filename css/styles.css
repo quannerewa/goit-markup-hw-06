@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
@@ -98,19 +106,19 @@ gap: 40px;
 
 
 .menu-link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        display: block;
-        padding-top: 24px;
-            padding-bottom: 24px;
+position: relative;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.02em;
+color: #2e2f42;
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .menu-link .current::after {
     content: '';
-        position: relative;
+        position: absolute;
         left: 0;
         bottom: 1px;
         width: 100%;
