@@ -512,8 +512,9 @@ align-items: baseline;
     margin-right: 120px
 }
 
-.logo footer {
-        font-weight: 700;
+.logo-footer{
+       display: inline-block;
+    font-weight: 700;
         font-size: 18px; 
         line-height: 1.17;
         letter-spacing: 0.03em;
@@ -539,7 +540,7 @@ background-color:#4d5ae5;
 }
 
 .footer-social-media {
-    padding-left: 120px;
+
 }
 
 .footer-social-media-text {
@@ -578,7 +579,7 @@ font-weight: 500;
     display: flex;
     align-items: center;
 justify-content: center;
-margin-top: 8px;
+
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
