@@ -623,6 +623,7 @@ border-radius: 4px;
     width: 408px;
     min-height: 584px;
     background-color: #fcfcfc;
+    padding: 24px ;
 }
 
 .backdrop-modal.is-open {
@@ -632,32 +633,63 @@ border-radius: 4px;
 }
 
 .modal-close-btn {
-  display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+    display: flex;
     width: 24px;
     height: 24px;
-    background-color: transparent;
-    fill: #e7e9fc;
     line-height: 0;
     padding: 0;
     border-radius: 100%;
+    fill: #e7e9fc;
         stroke-width: 1px;
-        stroke: rgba(0, 0, 0, 0.1);
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
 }
 
-.modal-close-btn:hover,
+.modal-close-btn:hover ,
 .modal-close-btn:focus {
     fill: #404bbf;
 }
 
 .close-icon {
 display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+fill: #2e2f42;
+}
+
+.modal-text {
+ 
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        width: 360px;
+        margin-bottom: 16px;
 }
 
 /*#endregion backdrop*/
 
+.form-wrapper-cont {}
 
+.modal-form-label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: block;
+        margin-bottom: 4px;
+}
+
+.modal-cont-input {}
+
+.modal-input {}
+
+.modal-icon {}
 
 
