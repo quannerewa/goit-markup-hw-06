@@ -610,13 +610,23 @@ display: flex;
         margin-bottom: 16px;
 }
 
+.footer-form {
+    display:flex;
+    gap: 24px;
+}
+
 .footer-input {
     border: 1px solid #fff;
         border-radius: 4px;
         width: 264px;
         height: 40px;
-        background-color: #2e2f42;
-        display: flex;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: #ffffff;
             
 }
 
@@ -625,7 +635,7 @@ font-weight: 400;
             font-size: 12px;
             line-height: 2;
             letter-spacing: 0.04em;
-            color: #fff;
+            color: #ffffff;
            
 }
 
@@ -638,7 +648,7 @@ background-color: #4d5ae5;
     gap: 16px;
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
         border: none;
             font-weight: 500;
@@ -652,6 +662,7 @@ background-color: #4d5ae5;
 
 .footer-icon {
     fill: #fff;
+    margin-left: 16px;
 }
 
 /*#endregion footer*/
