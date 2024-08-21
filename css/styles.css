@@ -886,7 +886,7 @@ background-color: transparent;
 .checkbox:checked+.custom-label-user-checkbox>.custom-checkbox {
     border-color: transparent;
     border: none;
-    background-color: #404bbf;
+    fill: #f4f4fd;
 }
 
 .privacy-police {
