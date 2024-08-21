@@ -885,7 +885,7 @@ background-color: transparent;
 
 }
 
-input .checkbox:checked {
+input .checkbox:checked > .custom-checkbox {
     border: none;
     fill: #f4f4fd;
 }
