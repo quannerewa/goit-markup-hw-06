@@ -879,15 +879,14 @@ background-color: transparent;
         border: 1px solid rgba(46, 47, 66, 0.4);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill: transparent;
-        background-color: #404bbf;
-
-       
+        
 
 }
 
-input .checkbox:checked > .custom-checkbox {
+.checkbox:checked+.custom-label-user-checkbox>.custom-checkbox {
+    border-color: transparent;
     border: none;
-    fill: #f4f4fd;
+    background-color: #404bbf;
 }
 
 .privacy-police {
@@ -897,10 +896,7 @@ input .checkbox:checked > .custom-checkbox {
         color: #4d5ae5;
 }
 
-.checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
-border-color: transparent;
-background-color: #404bbf;
-}
+
 
 .modal-submit {
 font-weight: 500;
