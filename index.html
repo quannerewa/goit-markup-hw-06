@@ -511,7 +511,7 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form>
           <div class="form-wrapper-cont">
-            <label form="user-name" class="modal-form-label">Name</label>
+            <label for="user-name" class="modal-form-label">Name</label>
             <div class="modal-cont-input">
               <input
                 id="user-name"
@@ -526,7 +526,7 @@
             </div>
           </div>
           <div class="form-wrapper-cont">
-            <label form="user-tell" class="modal-form-label">Phone</label>
+            <label for="user-tell" class="modal-form-label">Phone</label>
             <div class="modal-cont-input">
               <input
                 class="modal-input"
@@ -540,7 +540,7 @@
             </div>
           </div>
           <div class="form-wrapper-cont">
-            <label form="user-email" class="modal-form-label">Email</label>
+            <label for="user-email" class="modal-form-label">Email</label>
             <div class="modal-cont-input">
               <input
                 class="modal-input"
@@ -554,11 +554,12 @@
             </div>
           </div>
           <div class="form-wrapper-cont-comment">
-            <label form="user-comment" class="modal-form-label-comment"
+            <label for="user-comment" class="modal-form-label-comment"
               >Comment</label
             >
             <textarea
               class="modal-textarea"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -567,9 +568,12 @@
             <input
               type="checkbox"
               name="user-checkbox"
+              id="user-privacy"
+              value="true"
               class="checkbox visually-hidden"
+              checked
             />
-            <label form="user-checkbox" class="custom-label-user-checkbox">
+            <label for="user-privacy" class="custom-label-user-checkbox">
               <span class="custom-checkbox">
                 <svg class="" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
