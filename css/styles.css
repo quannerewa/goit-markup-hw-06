@@ -885,8 +885,9 @@ background-color: transparent;
 
 }
 
-input:checked {
+input .checkbox:checked {
     border: none;
+    fill: #f4f4fd;
 }
 
 .privacy-police {
