@@ -23,7 +23,7 @@
   </head>
   <body>
     <!--#region header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a class="logo" href="./index.html"
@@ -54,8 +54,78 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-nav">
+        <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link mob-studio" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item"><a class="mob-menu-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="mob-adrs">
+          <ul class="mob-adrs-item"> 
+            <li>
+              <a class="mob-adrs-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mob-adrs-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li> 
+          </ul>
+        </address>
+         <ul class="mob-social-media-item">
+                  <li class="mob-social-media-list">
+                    <a class="mob-section-link-icon" href="">
+                      <svg class="icon-social-media" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-media-list">
+                    <a class="mob-section-link-icon" href="">
+                      <svg class="icon-social-media" width="16" height="16">
+                        <use href="./images/icons.svg#icon-tweeter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-media-list">
+                    <a class="mob-section-link-icon" href="">
+                      <svg class="icon-social-media" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-social-media-list">
+                    <a class="mob-section-link-icon" href="">
+                      <svg class="icon-social-media" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+        </nav>
+      </div>
+    </header>
     <!--#endregion header-->
     <main>
       <!--#region section1-->
@@ -223,8 +293,11 @@
             </li>
             <li class="section-team-workers workers-item">
               <img
-                src="./images/camila-garcia.jpg 1x, ./images/camila-garcia-2x.jpg 2x"
-                src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg
+                "
+                src="camila-garcia.jpg"
                 alt="camila-garcia"
                 width="264"
                 height="260"
@@ -328,20 +401,24 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/mb-banking-app-1x.jpg 1x,
-                      /images/images-portfolio/mb-banking-app-2x.jpg    2x
+                      /images/mb-images-portfolio/mb-banking-app-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
+
                   <source
                     srcset="
                       /images/tab-img-portfolio/mb-bank-1x.jpg 1x,
                       /images/images-portfolio/mb-bank-2x.jpg  2x
                     "
+                    media="(min-width:768px)"
                   />
                   <source
                     srcset="
                       /images/desk-img-portfolio/imgdesk-bank-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-bank-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
                   <img
                     src="./images/banking-app.jpg"
@@ -367,11 +444,13 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/mb-payment-1x.jpg 1x,
-                      /images/images-portfolio/mb-payment-2x.jpg    2x
+                      /images/mb-images-portfolio/mb-payment-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
                   <source
                     srcset="/images/tab-img-portfolio/imgtb-pay-1x.jpg 1x,/ images/tab-img-portfolio/imgtb-pay-2x.jpg 2x"
+                    media="(min-width:768px)"
                   />
 
                   <source
@@ -379,6 +458,7 @@
                       /images/desk-img-portfolio/imgdesk-pay-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-pay-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
 
                   <img
@@ -406,20 +486,23 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/imgmb-meditation-1x.jpg 1x,
-                      /images/images-portfolio/imgmb-meditation-2x.jpg    2x
+                      /images/mb-images-portfolio/imgmb-meditation-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
                   <source
                     srcset="
                       /images/tab-img-portfolio/imgtb-med-1x.jpg 1x,
                       /images/tab-img-portfolio/imgtb-med-2x.jpg 2x
                     "
+                    media="(min-width:768px)"
                   />
                   <source
                     srcset="
                       /images/desk-img-portfolio/imgdesk-med-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-med-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
                   <img
                     src="./images/meditation-app.jpg"
@@ -446,20 +529,23 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/imgmb-taxi-1x.jpg 1x,
-                      /images/images-portfolio/imgmb-taxi-2x.jpg    2x
+                      /images/mb-images-portfolio/imgmb-taxi-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
                   <source
                     srcset="
                       /images/tab-img-portfolio/imgtb-taxi-1x.jpg 1x,
                       /images/tab-img-portfolio/imgtb-taxi-2x.jpg 2x
                     "
+                    media="(min-width:768px)"
                   />
                   <source
                     srcset="
                       /images/desk-img-portfolio/imgdesk-taxi-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-taxi-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
                   <img
                     src="./images/taxi-service.jpg"
@@ -486,20 +572,23 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/imgmb-illustration-1x.jpg 1x,
-                      /images/images-portfolio/imgmb-illustration-2x.jpg    2x
+                      /images/mb-images-portfolio/imgmb-illustration-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
                   <source
                     srcset="
                       /images/tab-img-portfolio/imgtb-illust-1x.jpg 1x,
                       /images/tab-img-portfolio/imgtb-illust-2x.jpg 2x
                     "
+                    media="(min-width:768px)"
                   />
                   <source
                     srcset="
                       /images/desk-img-portfolio/imgdesk-illust-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-illust-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
                   <img
                     src="./images/screen-illustrations.jpg"
@@ -528,20 +617,23 @@
                   <source
                     srcset="
                       /images/mb-images-portfolio/imgmb-courses-1x.jpg 1x,
-                      /images/images-portfolio/imgmb-courses-2x.jpg    2x
+                      /images/mb-images-portfolio/imgmb-courses-2x.jpg 2x
                     "
+                    media="(min-width:320px)"
                   />
                   <source
                     srcset="
                       /images/tab-img-portfolio/imgtb-courses-1x.jpg 1x,
                       /images/tab-img-portfolio/imgtb-courses-2x.jpg 2x
                     "
+                    media="(min-width:768px)"
                   />
                   <source
                     srcset="
                       /images/desk-img-portfolio/imgdesk-courses-1x.jpg 1x,
                       /images/desk-img-portfolio/imgdesk-courses-2x.jpg 2x
                     "
+                    media="(min-width:1158px)"
                   />
                   <img
                     src="./images/online-courses.jpg"
