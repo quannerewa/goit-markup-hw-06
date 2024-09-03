@@ -26,6 +26,8 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -40,6 +42,7 @@ button{
 .container {
     /*max-width: 1158px;*/
     max-width: 320px;
+    /* width: 288px; */
     /*padding-left: 15px;
     padding-right: 15px;*/
     padding-left: 16px;
@@ -408,9 +411,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /*#region section4*/
 
 .section-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 72px;
+    }
 
 .section-portfolio-title {
 
@@ -426,11 +431,16 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-portfolio-item {
-  display: flex;
+    display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    /* gap: 24px; */
     row-gap: 48px;
+    justify-content: center;
+    align-items: center;
+}
 
+.section-portfolio > .container {
+    width:288px;
 }
 
 .section-portfolio-item-list {
@@ -497,7 +507,7 @@ transition-duration: 250ms;
 }
 
 .appointment-app-list{
-width: calc((100% - 48px) / 3);
+width: calc((100% - 48px) / 1);
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -943,7 +953,7 @@ background-color: #404bbf;
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
-  
+ width: 584px;
     }
 
     .section-two {
@@ -983,6 +993,7 @@ background-color: #404bbf;
         .workers-item {
                 width: calc((100% - 24px) / 2);
             }
+
 }
 
 
@@ -992,11 +1003,16 @@ background-color: #404bbf;
             max-width: 1158px;
             padding-left: 15px;
                 padding-right: 15px;
+           width: 1158px;    
         }
 
 .section-two {
     padding: 120px 0
 }
+
+/* .section-two > .container {
+    max-width: 1158px;
+} */
 
 .section-two-item {
     display: flex;
@@ -1049,6 +1065,46 @@ background-color: #404bbf;
 
 }.workers-item {
         width: calc((100% - 72px) / 4);
+    }
+
+/* section 4 */
+ 
+.section-portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+} 
+
+.section-portfolio-item-list {
+width: calc((100% - 24px) / 3);
+    width: 1128px;
+} 
+
+
+.section-portfolio-item{
+display: flex;
+flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+.appointment-app-list {
+width: calc((100% - 96px)/3);
+width: 100%;
+
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
+    .section-two > .container {
+        max-width: 584px;
+    }
+
+    .section-portfolio > .container {
+        max-width: 768px;
     }
 }
 /* #endregion media */
