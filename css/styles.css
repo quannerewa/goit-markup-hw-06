@@ -85,8 +85,8 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-width: 320px;
-    height: 96px;
+/* width: 320px;
+    height: 96px; */
 }
 
 .nav {
@@ -178,8 +178,8 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
     display: block;
-    padding-top: 24px;
-padding-bottom: 24px;
+     /* padding-top: 24px;
+padding-bottom: 24px;  */
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -192,13 +192,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .menu-open-btn {
     background-color: transparent;
     border: none;
+    margin-right: 24px;
 }
 
 .icon-burger {
     fill: #2f2f37;
 }
 
-.mob-menu.is-open {
+.mob-menu .is-open {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
@@ -217,7 +218,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-top: 24px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+      
         /* opacity: 0;
         visibility: hidden;
         pointer-events: none; */
@@ -241,8 +242,7 @@ width: 24px;
     height: 24px;
     cursor: pointer;
     border-color: none;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
     stroke-width: 1px;
     stroke: #2e2f42;
     background-color: transparent;
@@ -589,7 +589,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     row-gap: 48px;
     justify-content: center;
     align-items: center;
-    width: 288px;
+   
 
 }
 
@@ -838,7 +838,7 @@ background-color: #4d5ae5;
             letter-spacing: 0.04em;
             text-align: center;
             color: #fff;
-            margin-top: 16px;
+           
             margin-left: auto;
             margin-right: auto;
 
@@ -1119,12 +1119,42 @@ background-color: #404bbf;
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
- width: 584px;
+ /* width: 584px; */
     }
 .mob-menu {
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
+}
+
+.menu-open-btn {
+    opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+}
+
+.menu {
+    display: flex;
+        margin-left: 120px; 
+margin-right: 120px;
+}
+
+.adrs-item {
+    display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+
+.adrs-link {
+    display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        /* padding: 24px 0; */
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section hero */
@@ -1145,8 +1175,9 @@ background-color: #2e2f42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/tablet-people-office-2x.jpg);
+            padding: 112px;
     }
-
+}
 .hero-title {
     font-size: 56px;
         line-height: 1.07;
@@ -1163,7 +1194,7 @@ background-color: #2e2f42;
     }
 
     .section-two-posabilities {
-        width: calc((100% - 48px)/3);
+        width: calc((100% - 24px)/2);
     }
 
     .section-two-title {
@@ -1173,6 +1204,10 @@ background-color: #2e2f42;
         letter-spacing: 0.02em;
         color: #2e2f42;
     }
+
+.section-two-item {
+    gap: 72px 24px;
+}
 
     /* section 3 */
         .section-team-item {
@@ -1189,8 +1224,11 @@ background-color: #2e2f42;
             /* width: 100%; */
         }
 
+
+
         .workers-item {
                 width: calc((100% - 24px) / 2);
+                margin-bottom: 64px;
             }
 
 /* section portfolio */
@@ -1206,7 +1244,7 @@ background-color: #2e2f42;
 }
 
 .appointment-app-list {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 24px) / 2);
 }
 
 /* footer */
@@ -1224,12 +1262,33 @@ background-color: #2e2f42;
     margin-right: auto;
 }
 
+.footer-form{
+    display: flex;
+    align-items: center;
+}
+
 .footer-sub-title {
     display: block;
-        text-align: center;
+        text-align: left;
         justify-content: center;
 
 }
+.logo-footer {
+display: inline-block;
+text-align: left;
+margin-right: 0;
+margin-bottom: 16px;
+padding: 0;
+}
+
+.footer-social-media-text {
+    text-align: left;
+}
+
+.footer-subscribe {
+    margin-left: 0;
+}
+
 
 }
 
@@ -1245,6 +1304,41 @@ background-color: #2e2f42;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.menu {
+display:flex;
+gap: 40px;
+}
+
+.menu-link {
+    padding-top: 24px;
+        padding-bottom: 24px;
+}
+
+.menu-link.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.adrs-item{
+    flex-direction:row ;
+    gap: 40px;
 }
 
 /* section hero */
@@ -1447,11 +1541,11 @@ text-align: center;
 
 }
 
-}
+
 @media screen and (min-width:768px) and (max-width:1157px) {
-    .section-two > .container {
+    /* .section-two > .container {
         max-width: 584px;
-    }
+    } */
 
     .section-portfolio > .container {
         max-width: 768px;
